@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab One
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card" *ngFor="let item of article?.articles" >
+      <ion-img [src]="item.urlToImage"></ion-img>
+      <ion-card-header>
+        
+        <ion-card-title>{{item.title}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>{{item.description}}</p>
+      </ion-card-content>
+    </ion-card>
+   
+</ion-content>
